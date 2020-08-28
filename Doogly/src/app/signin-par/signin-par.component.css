@@ -1,0 +1,52 @@
+form {
+    margin-top:60px;
+}
+img {
+    border-radius:10px;
+    position:absolute;
+    bottom:12%;
+    right:3%;
+    width:500px;
+}
+@media (max-width: 1400px) {
+    img {
+       display:none;
+    }
+}
+
+mat-form-field {
+    margin: 10px 0 0 10%;
+    width:45%;
+    display:block;
+}
+
+.submit {
+    margin: 0 auto;
+    width:200px;
+    height:60px;
+}
+.add_photo {
+    position:absolute;
+    top:20%;
+    right:8%;
+    width:100px;
+    height:100px;
+} 
+.title_info{
+    padding:5px;
+    margin: 10px auto 10px;
+    background:#f10000;
+    color:white;
+    border-radius:10px;
+    
+  }
+  @media (max-width: 700px) {
+    mat-form-field {
+       width:70%;
+    }
+    .add_photo {
+        width:50px;
+        height:50px;
+        right:2%;
+    }
+}

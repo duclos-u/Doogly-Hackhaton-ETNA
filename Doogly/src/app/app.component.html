@@ -1,0 +1,46 @@
+<header>
+
+ <a href="/doogly"> <img id="max_logo" src="assets/logo doogly.png" alt="logo"></a>
+
+ <a href="/doogly"><img id="min_logo" src="assets/doogly_true.png" alt="logo"></a>
+
+ <div class="dropdown">
+  <button id="search" (click)="showNav()"><img src="assets/menu_burger.png" alt="menu" class="burger"></button>
+</div>
+ <nav id="nav_bar" *ngIf="!display">
+  <ul>
+    <li><a href="doogly/inscription/pro">Je suis un professionnel</a></li>
+    <li><a href="doogly/connexion">Se connecter</a></li>
+    <li><a href="doogly/inscription/particulier">S'inscrire</a></li>
+    <li><a href="#">Se deconnecter</a></li>
+
+
+  </ul>
+  <a href="doogly/proDashboard" id="user">Sarah Petit</a>
+</nav>
+
+
+</header>
+
+<div class="container">
+
+<router-outlet></router-outlet>
+  <app-popup></app-popup>
+
+</div>
+
+<div class="button">
+    <button class="helpbutton" (click)="helpPopup()"><img src="assets/message.png" alt=""></button>
+
+</div>
+
+<footer>
+  <p>Rejoignez-nous</p>
+
+  <a href="https://fr-fr.facebook.com/pages/category/App-Page/Doogly-613262975755941/"  rel="noopener noreferrer"target="_blank"><img class="logo_img" id="facebook" src="assets/facebook_blanc2.png" alt="facebook"></a>
+    <a href="https://instagram.com" rel="noopener noreferrer" target="_blank"><img class="logo_img" src="assets/instagram_blanc.png" alt="instagram"></a>
+      <a href="https://twitter.com" rel="noopener noreferrer" target="_blank"><img class="logo_img" src="assets/twitter_blanc.png" alt="twitter"></a>
+  <p>Doogly &copy; Copyright 2019</p>
+
+</footer>
+

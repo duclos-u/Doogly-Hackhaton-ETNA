@@ -1,0 +1,169 @@
+
+.button_inside {
+    position: relative;
+    display:inline;
+    
+}
+
+.button_inside input[type="text"]{
+    height:60px;
+    font-family: 'Nunito', sans-serif;
+    font-size:1.1rem;
+    border:solid lightgray 1px;
+    margin-bottom: 8px;
+    padding: 0 0px 0 20px;
+    vertical-align: text-top;
+    
+    
+}
+
+.test {
+    border-radius:40px 0 0px 40px;
+    border:solid lightgrey 1px;
+    padding: 0 0px 0 20px;
+    height:60px;
+    vertical-align: text-top;
+    background:white;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+mat-autocomplete {
+    z-index:-2;
+}
+#second{
+    width:55%;
+}
+.button_inside input[type="text"], .loupe_button{
+display: inline;
+
+}
+.loupe_button {
+    border:none;
+    background:#f10000;
+    cursor:pointer;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    height:62px;
+    width:60px;
+    vertical-align: text-top;
+    
+}
+mat-form-field{
+    width:33%;
+}
+@media (max-width: 1000px) {
+    #second {
+        border-radius: 0 40px 40px 0px;
+        display:none;
+    }
+    mat-form-field{
+        width:65%;
+        padding-right:20px;
+    }
+    @media (max-width: 1400px) {
+        /* .test {
+            width:89%;
+        } */
+    }
+}
+@media (max-width: 205px) {
+    #first {
+        border-radius:40px;
+    }
+    .loupe_button {
+        border-radius:80px;
+    }
+}
+.loupe_button:hover {
+    background:#bb0000;
+}
+.loupe_button img {
+    padding-top:5px;
+    width:35px;
+}
+
+
+form {
+    display:block;
+    margin-bottom: 10px;
+}
+
+agm-map {
+    height:400px;
+    border-radius:50px;
+}
+
+.expert{
+    border: solid lightgray 1px;
+    border-radius:10px;
+    box-shadow: lightgray 1px 1px 0px 0px;
+    padding:10px;
+    margin-bottom:10px;
+    text-align:left;
+    position:relative;
+    background:white;
+    
+}
+.expert:hover {
+background:rgb(240, 240, 240);
+}
+.expert img {
+    width: 70px;
+    margin-right:10px;
+    border-radius:10px;
+}
+.expert img, .name {
+    display:inline;
+    vertical-align: text-bottom;
+}
+
+.expert .description {
+    display:block;
+}
+.description {
+    width:40%;
+    height:30%;
+    
+}
+.profile_button {
+    font-family: 'Nunito', sans-serif;
+    border-radius:10px;
+    background:#f10000;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    color:white;
+}
+.profile_button:hover {
+    background: #bb0000;
+    color:white;
+}
+
+#calendar  {
+    width:25%;
+    float:right;
+}
+@media (max-width: 1140px) {
+    .planning {
+        display:none;
+    }
+    .expert {
+        height:auto;
+    }
+}
+
+.rate {
+    margin-left:80px;
+    font-size:1.8rem;
+    margin-right:5px;
+}
+.recommendation {
+    font-size:0.8rem;
+}
+.rate:hover {
+    color:#f10000;
+    cursor:pointer;
+}
+

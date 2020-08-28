@@ -1,0 +1,46 @@
+.photo {
+    width:130px;
+    border-radius:10px;
+    position:absolute;
+    top:0.6%;
+    left:20%;
+
+}
+.see_profile {
+    position:absolute;
+    top:5%;
+    right:8%;
+    width:100px;
+    height:100px;
+  }
+.red_title {
+    padding:10px;
+    color:#f10000;
+    border-radius:10px;
+    background:whitesmoke;
+    box-shadow: lightgrey 1px 1px 0px 0px;
+  }
+.posts {
+    margin-top:100px;
+}
+
+.post {
+    margin:0 auto 20px;;
+    border:solid 1px lightgray;
+    width:70%;
+    padding:20px;
+    border-radius:10px;
+}
+.message_date {
+    float:right;
+}
+.post_text {
+    text-align: left;
+    margin: 0 auto;
+    width:70%;
+}
+.post img {
+    width:70%;
+    border-radius: 10px;
+    margin-bottom:20px;
+}

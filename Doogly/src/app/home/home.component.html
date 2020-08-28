@@ -1,0 +1,91 @@
+
+
+    <h1>Cherchez un Professionnel du secteur animalier rapidement !</h1>
+
+    <div class="search_bar">
+
+
+        <form>
+        <mat-form-field floatLabel='always' appeareance="fill" color="warn">
+            <div class="button_inside">
+                  <input class="test"  type="text" matInput [matAutocomplete]="auto" placeholder="Profession"/>
+            <mat-autocomplete id="yes" #auto="matAutocomplete">
+                <mat-option *ngFor="let option of options" [value]="option">
+                    {{option}}
+                </mat-option>
+            </mat-autocomplete>
+            </div>
+        </mat-form-field>
+        <div class="button_inside">
+            <input id="second" type="text"  placeholder="Où ?" ngx-google-places-autocomplete [options]="{componentRestrictions: { country: 'FR' } }" #placesRef="ngx-places"
+                   (onAddressChange)="handleAddressChange($event)"/>
+
+        </div>
+        <button type="submit" class="loupe_button"><img src="../assets/true_loupe.png" alt="loupe"></button><br>
+
+
+    <strong>Filtres :</strong> <br>
+    <label for="position"></label>
+    <input type="checkbox" name="expertise" value="no">
+    <label for="expert">Expertise</label>
+    <input type="checkbox" name="près" value="no">
+    <label for="pres">Proche</label>
+    <input type="checkbox" name="best_rate" value="no">
+    <label for="rate">Notes</label>
+
+</form>
+</div>
+
+
+    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="12" (mapClick)="OnChoseLocation($event)">
+        <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+    </agm-map>
+
+<h2>Experts trouvés : </h2>
+<ul>
+      <li><div class="expert">
+        <img src="../assets/mec_1.jpeg" alt="alex">
+        <span class="name"><strong>Alex Dujardin</strong></span>
+        <div class="recommendation"><span class="rate"><mat-icon >grade</mat-icon> </span>12</div>
+        <p class="description">Diplômé du Brevet Professionnel éducateur canin depuis 6 mois</p>
+        <div class="profile_div">
+            <button onclick="window.location.href = 'doogly/proPage'" class="profile_button">Voir la fiche</button>
+        </div>
+        <div class="planning">
+
+        </div>
+    </div> </li>
+
+    <li><div class="expert">
+        <img src="assets/femme.jpg" alt="sarah">
+        <span class="name"><strong>Sarah Petit</strong></span>
+        <div class="recommendation"><span class="rate"><mat-icon >grade</mat-icon></span>30</div>
+        <p class="description">Educatrice canine depuis 2 ans </p>
+
+        <div class="profile_div">
+            <button  onclick="window.location.href = 'doogly/proPage'" class="profile_button">Voir la fiche</button>
+        </div>
+
+        <div class="planning">
+
+
+            </div>
+
+    </div></li>
+
+ <li> <div class="expert">
+        <img src="../assets/mec_2.jpg" alt="pierre">
+        <span class="name"><strong>Pierre Garnier</strong></span>
+        <div class="recommendation"><span class="rate"><mat-icon color="warn">grade</mat-icon> </span>150</div>
+        <p class="description">Vétérinaire depuis 15 ans</p>
+        <div class="profile_div">
+               <button onclick="window.location.href = 'doogly/proPage';"class="profile_button">Voir la fiche</button>
+            </div>
+
+        <div class="planning">
+
+
+            </div>
+
+    </div> </li>
+    </ul>
