@@ -1,0 +1,92 @@
+
+<img class="photo" src="assets/femme.jpg" alt="photo_pro"> <h1>Sarah Petit</h1>
+<div class="shortpresentation"> 
+    <p>Éducatrice canine depuis 2 ans, prends rendez-vous autour du Blanc-mesnil. Je vous reponds dans les 24h</p>
+    <div class="part" id="leftpart">
+        <h3 class="red_info">Informations personnelles</h3>
+    <ul>
+        <li><span class="strong">Numero de téléphone</span>: 0612345671</li>
+        <li><span class="strong">Adresse</span>: 32 rue Victor Hugo, Blanc-mesnil</li>
+        <li><span class="strong">E-mail</span>: sarah.petit@gmail.com</li>
+        <li><span class="strong">Formations</span> : Diplome du Brevet Professionnel éducateur canin</li>
+    </ul>
+    </div>
+    <div class="part" id="rightpart">
+        <h3 class="red_info">Informations financieres</h3>
+        <ul>
+            <li><span class="strong">Tarification</span> : non renseigné</li>
+            <li><span class="strong">Moyens de paiements</span> : Chèques, espèces</li>
+        </ul>
+
+    </div>
+    
+</div>
+<div class="dashbar"><mat-icon [matBadge]="1" matBadgeColor="warn" matBadgeSize="small">email</mat-icon> <mat-icon >schedule</mat-icon><mat-icon >add_circle_outline</mat-icon> <mat-icon >build</mat-icon></div>
+<h3 class="red_title">Messagerie</h3>
+<div class="message_board">
+    <div class="message_bar"> <mat-icon class="add">send</mat-icon><mat-icon class="add">reply_all</mat-icon> <mat-icon class="delete">delete_outline</mat-icon> </div>
+    <ul>
+        <li class="non_read">Message de <span class="name_sender">Djibril</span> : <span class="description" >Merci d'avoir sauvé mon chie...</span>  <span class="message_date">le 20/12/19 à 11h00</span></li>
+        <li>Message de <span class="name_sender">Roger</span> : <span class="description" >Merci beaucoup pour tout...</span>  <span class="message_date">le 20/12/19 à 11h00</span></li>
+        <li>Message de <span class="name_sender">Alexis</span> : <span class="description" >Vous êtes la meilleur des...</span>  <span class="message_date">le 20/12/19 à 11h00</span></li>
+        <li>Message de <span class="name_sender">Louis</span> : <span class="description" >Croquette est super discipli...</span>  <span class="message_date"> le 20/12/19 à 11h00</span>.</li>
+    </ul>
+</div>
+<h3 class="red_title">Créer un post public</h3>
+<div class="post">
+    <a href="doogly/proStory"> <button mat-fab color="warn" class="see_profile">Profil</button></a>
+
+<button mat-fab color="warn" class="add_photo"><mat-icon >add_photo_alternate</mat-icon></button>
+
+<mat-form-field color="warn" id="post">
+    <textarea matInput placeholder="Ecrivez quelque chose de percutant" > </textarea>
+</mat-form-field>
+<button mat-raised-button color="warn">Envoyer</button>
+</div>
+<h3 class="red_title">Gerer votre planning</h3>
+<div id="calendar"></div>
+<h3 class="red_title">Modifier votre profil</h3>
+<div class="profile">
+<form>
+    
+    <mat-form-field color="warn">
+        <input   type="number" matInput placeholder="Numero de téléphone" />
+      
+    </mat-form-field>
+   
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Adresse" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Changer d'adresse e-mail" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Changer de mot de passe" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Confirmer votre mot de passe" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Formations" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Tarification" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Moyens de paiements" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <textarea matInput placeholder="Changer votre description"> </textarea>
+    </mat-form-field>
+    <button mat-fab color="warn" class="add_photo"><mat-icon >add_photo_alternate</mat-icon></button>
+    <button mat-raised-button color="warn">Envoyer</button>
+    
+</form>
+</div>

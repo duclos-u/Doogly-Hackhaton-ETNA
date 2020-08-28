@@ -1,0 +1,126 @@
+<!-- 
+<p>pro-page works!</p>
+
+
+
+ <form>
+     <mat-form-field>
+         <input class="#first" type="text" matInput [matAutocomplete]="auto" />
+         <mat-autocomplete id="yes" #auto="matAutocomplete">
+             <mat-option *ngFor="let option of options" [value]="option">
+                {{option}}
+             </mat-option>
+         </mat-autocomplete>
+     </mat-form-field>
+ </form>
+ 
+ <button mat-raised-button>Hello World</button>
+ <mat-button-toggle>Clique</mat-button-toggle>
+ <mat-icon>grade</mat-icon>
+
+ <span [matBadge]="notif" [matBadgeHidden]="notif === 0" matBadgeColor="warn" matBadgeOverlap="false">C'est le yes</span> -->
+
+
+ <!-- <div id="wrapper" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <div class="protop">
+      <img src="../assets/mec_3.png" alt="Kevin">
+      <p class="proname">Kevin Aribeau</p>
+      <p class="projob"><br>Vétérinaire</p>
+    </div>
+    <div class="boudin">
+      <p class="p1"> Information sur le professionnel</p>
+      <p class="p2">Coordonnées</p>
+    </div>
+    <div class="informations">
+      <p class="p3">
+        Le Docteur Kevin Aribeau, vétérinaire vous
+        reçoit au sein de son cabinet situé à
+        Meudon.
+        Le docteur prend en charge l’ensemble des
+        consultations de médecine générale</p>
+      <div class="border"></div>
+      <p class="pbold">Adresse postale</p>
+      <p class="p6">29 rue des gambettes 75006 Paris</p>
+      <p class="pbold">E-mail</p>
+      <p class="p8">Emailstylé@emiel.oof</p>
+      <p class="pbold">Téléphone</p>
+      <p class="p10">06 10 20 30 40</p>
+    </div>
+    <div class="boudin2">
+      <p class="p4">Formations</p>
+      <p class="p2">Tarifs</p>
+    </div>
+    <div class="informations">
+      <p class="p3">Diplomé d’état de Docteur vétérinaire </p>
+      <div class="border"></div>
+      <p class="pbold">Consultation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="unbold">30€</span></p>
+      <p class="pbold">Visite à domicile &nbsp; &nbsp; &nbsp; &nbsp; <span class="unbold">30€</span></p>
+    </div>
+  </div> 
+   -->
+  
+   <img class="photo" src="assets/mec_2.jpg" alt="photo_pro"> <h1>Pierre Garnier</h1>
+   <mat-icon color="warn">grade</mat-icon> 150
+   <a href="doogly/proStory"><button mat-fab color="warn" class="see_profile">Voir<br> Profil</button></a>
+
+<div class="pro_one">
+ <h2 class="title_info">Informations personnelles</h2>
+ <div class="pro_bloc" id="firstpro">
+   <h3 class="red_title">Description :</h3>
+   <p>
+   Le Docteur Pierre Garnier, vétérinaire vous
+   reçoit au sein de son cabinet situé à
+   Meudon.<br>
+   Le docteur prend en charge l’ensemble des
+   consultations de médecine générale</p>
+ </div>
+ <div class="pro_bloc" id="secondpro">
+   <h3 class="red_title">Experiences :</h3>
+     <ul>
+       <li>Diplomé d’état de Docteur vétérinaire</li>
+       <li>Experience de 15 ans</li>
+     </ul>
+         <h3 class="red_title">Badges :</h3>
+         <ul>
+           <li>Élu vétérinaire de la semaine</li>
+           <li>Le plus étoilé de la semaine</li>
+           <li>Doogly d'or</li>
+         </ul>
+       
+     
+   </div>
+
+ </div>
+
+ <div class="pro_two">
+   <h2 class="title_info">Informations pratiques</h2>
+   <div class="pro_bloc" id="thirdpro"> 
+     <h3 class="red_title">Tarification :</h3>
+     <ul>
+     <li><span class="strong">60 €</span> de l'heure</li>
+     <li><span class="strong">120 €</span> la journée</li>
+     </ul>
+     <h3 class="red_title">Moyens de paiements : </h3>
+     <ul>
+     <li>Chèques, espèces et cartes bancaires</li>
+     </ul>
+   </div>
+   <div class="pro_bloc" id="fourthpro"> 
+     <h3 class="red_title">Accès :</h3>
+     <ul>
+       <li><span class="strong">Adresse :</span>
+       29 rue des gambettes 75006 Paris</li>
+     </ul>
+     <h3 class="red_title">Contact :</h3>
+     <ul>
+   <li><span class="strong">E-mail :</span>
+   Emailstylé@emiel.oof</li>
+  <li><span class="strong">Téléphone :</span>
+   06 10 20 30 40</li>
+   </ul>
+   </div>
+ 
+   </div>
+   <h2 class="title_info">Prendre un rendez-vous</h2>
+   <div id="calendar"></div>
+

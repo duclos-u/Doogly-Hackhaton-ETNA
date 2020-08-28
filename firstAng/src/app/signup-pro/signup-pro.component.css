@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 43, 43);
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+.lien {
+    position: absolute;
+    text-align: center;
+    padding: 15px 40%;
+    text-decoration: none;
+}
+
+.right-col {
+    width: 380px;
+    height: 520px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px;
+    box-shadow: 0 0 20px 9px #0000000e;
+    border-radius: 10px;
+    background: rgb(243, 44, 44);
+    overflow: hidden;
+}
+.hero {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius:10px;
+}
+
+.left-col {
+    flex-basis: 30%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+.box-button {
+    width: 230px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+    border: 0;
+}
+.twins {
+    padding: 8px 25px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+#move-button {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(243, 44, 44), rgb(252, 75, 75));
+    border-radius: 30px;
+
+}
+.input-group {
+    top: 80px;
+    position: absolute;
+    width: 310px;
+    transition: .5s;
+    background: rgb(243, 44, 44);
+}
+.input-field {
+    width: 100%;
+    padding: 12px 0;
+    margin: 15px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid rgb(253, 69, 69);
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.submit-button {
+    margin: 50px 0;
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, rgb(252, 54, 54), rgb(252, 75, 75));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+}
+
+
+#signup {
+    left: 50px;
+}
+::placeholder {
+    color: white;
+    opacity: 0.3;
+}
+
+.left-col pre {
+    position: absolute;
+  top: 50%; left: 30%;
+  transform: translate(-70%, -30%);
+  font-size: 50px;
+}
+@media (max-width: 600px) {
+    .left-col pre {
+      display: none;
+    }
+    .left-col {
+        display: none;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .left-col {
+        display:none;
+    }
+}

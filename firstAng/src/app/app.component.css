@@ -1,0 +1,15 @@
+agm-map {
+    height: 400px;
+}
+
+.help_popup {
+    position:absolute;
+    right:0;
+    bottom:0;
+    height:200px;
+    width:100px;
+    border:solid 1px;
+    border-radius:10px;
+    background:red;
+
+}

@@ -1,0 +1,104 @@
+mat-icon:hover {
+    opacity:0.3;
+    cursor:pointer;
+}
+.photo {
+    width:130px;
+    border-radius:10px;
+  }
+  .part {
+      margin:0 auto;
+    vertical-align: text-top;
+    width:400px;
+     height:250px; 
+    
+}
+.part ul {
+    text-align:left;
+    list-style-type: circle;
+}
+  .dashbar {
+      background:whitesmoke;
+      border-radius:10px;
+  }
+  .dashbar mat-icon {
+      margin:20px;
+  }
+  .red_title {
+    padding:10px;
+    color:#f10000;
+    border-radius:10px;
+    background:whitesmoke;
+    box-shadow: lightgrey 1px 1px 0px 0px;
+  }
+  .message_board {
+      margin:0 auto;
+      width:70%;
+      height:100%;
+      border:solid 1px lightgray;
+      border-radius:10px;
+      background:white;
+  }
+  .message_bar {
+      border:solid 1px lightgray;
+      background:whitesmoke;
+      /* width:100%; */
+      height:40px;
+      border-radius: 10px 10px 0 0;
+      border-collapse: collapse;
+  }
+  .message_bar mat-icon {
+      margin:10px;
+  }
+  .add {
+      float:left;
+  }
+  .delete {
+      float:right;
+  }
+  .message_board ul {
+      text-align :left;
+  }
+  .non_read {
+      background:#f10000;
+      color:white;
+  }
+  .message_board ul li {
+      border: solid 1px lightgray;
+      padding:10px;
+      border-radius:10px;
+      margin:5px;
+  }
+  .message_board ul li:hover {
+      opacity:0.6;
+      cursor:pointer;
+  }
+  .message_date {
+      float:right;
+  }
+  .add_photo {
+      position:absolute;
+      top:10%;
+      right:8%;
+  } 
+  .see_profile {
+    position:absolute;
+    top:10%;
+    left:8%;
+  }
+  @media (max-width: 1040px) {
+      .message_date {
+          display:none;
+      }
+  }
+
+  #calendar {
+    margin:0 auto;
+    width:50%;
+}
+mat-form-field {
+    margin: 0 auto;
+    font-size: 16px;
+    display:block;
+    width:50%;
+  }

@@ -1,0 +1,188 @@
+You can add global styles to this file, and also import other style files
+body{
+  margin:0;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  height:100%;
+
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+li {
+  list-style-type: none;
+}
+.strong {
+  font-weight:bold;
+}
+.red_info {
+  margin:0 auto;
+  padding :5px;
+  border-radius:10px;
+  background: #f10000;
+  width:60%;
+  color:white;
+}
+header {
+  background:white;
+  border-bottom: solid 1.3px #f10000;
+  top:0;
+  position:fixed;
+  width:100%;
+  padding:15px;
+  z-index:2;
+}
+
+#max_logo{
+  width:120px;
+  margin: 5px 0 0 8.5%;
+  display:block;
+  float:left;
+}
+#min_logo {
+  display:none;
+}
+.dropdown {
+  display: none;
+}
+@media (max-width: 700px) {
+  #min_logo{
+    display:block;
+    width:50px;
+    margin: 11px 0 0 8.5%;
+    float:center;
+  }
+  #max_logo{
+    display:none;
+
+  }
+
+
+}
+nav {
+  /* float:left; */
+  margin-top:5px;
+  float:left;
+  margin-right: 5%;
+}
+nav li {
+  display:inline;
+  padding:5px;
+  
+}
+li a {
+  padding:10px;
+}
+li a:hover {
+  background:lightgray;
+  border-radius:10px;
+}
+
+@media (max-width: 1050px) {
+
+  nav li {
+    display:block;
+    width:100%;
+  }
+  nav {
+    float:left;
+  }
+  #max_logo {
+    float: none;
+  }
+  .dropdown {
+    display: block;
+  }
+  #user {
+    display:none;
+  }
+
+}
+
+#user {
+  position:absolute;
+  top:25%;
+  right:12%;
+  border:solid 1px #f10000;
+  background:#f10000;
+  padding:10px;
+  border-radius:10px;
+  color:white;
+
+}
+header #search {
+  width:45px;
+  height:45px;
+  border:none;
+  border-radius:10%;
+  font-size:10px;
+  position:fixed;
+  top:25px;
+  right:10%;
+  cursor:pointer;
+}
+
+.burger {
+  width: 15px;
+}
+
+#search:hover {
+  opacity:0.5;
+
+}
+
+.container {
+  text-align:center;
+  padding: 20px;
+  width: 80%;
+  margin: 140px auto;
+  border-radius:10px;
+  font-size:1rem;
+  border:solid 1px lightgray;
+  position:relative;
+}
+
+.button {
+  position:fixed;
+  bottom:20px;
+  right:30px;
+
+}
+.helpbutton {
+  border-radius: 80px;
+  border:solid #bb0000 1px;
+  height:60px;
+  width:60px;
+  background:#f10000;
+  cursor:pointer;
+  z-index: 10;
+}
+.helpbutton:hover {
+  background:#bb0000;
+}
+.helpbutton img {
+  width:30px;
+  height:30px;
+}
+.logo_img {
+  width:20px;
+  margin-right:5px;
+}
+#facebook {
+  border:solid white 1.5px;
+  border-radius: 5px;
+  width:17px;
+}
+footer {
+    width:100%;
+    text-align:center;
+    background: rgb(54, 54, 54);
+    z-index: 1;
+    color:white;
+    padding:2px 0 2px 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "Nunito", "Nunito", sans-serif; }
+

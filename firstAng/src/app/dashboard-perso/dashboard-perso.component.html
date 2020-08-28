@@ -1,0 +1,53 @@
+<img class="photo" src="assets/pp.png" alt="photo_pro"> <h1>Djibril Serbout</h1>
+<div class="part" id="leftpart">
+    <h3 class="red_info">Informations personnelles</h3>
+<ul>
+    <li><span class="strong">Numero de téléphone</span>: 0612345671</li>
+    <li><span class="strong">Adresse</span>: 32 rue Victor Hugo, Paris</li>
+    <li><span class="strong">E-mail</span>: Emailstylé@emiel.oof</li>
+</ul>
+</div>
+<div class="dashbar"><mat-icon [matBadge]="3" matBadgeColor="warn" matBadgeSize="small">email</mat-icon><mat-icon >build</mat-icon></div>
+<h3 class="red_title">Messagerie</h3>
+<div class="message_board">
+    <div class="message_bar"> <mat-icon class="add">send</mat-icon><mat-icon class="add">reply_all</mat-icon><mat-icon class="delete">delete_outline</mat-icon> </div>
+    <ul>
+        <li class="non_read">Message de <span class="name_sender">Alex Dujardin</span> : <span class="description" >Lorem ipsum dolor sit amet...</span>  <span class="message_date">le 20/12/19 à 11h00</span></li>
+        <li class="non_read">Message de <span class="name_sender">Pierre Leboss</span> : <span class="description" >Lorem ipsum, dolor sit amet ...</span>  <span class="message_date">le 12/12/19 à 15h00</span></li>
+        <li class="non_read">Message de <span class="name_sender">Sarah Petit</span> : <span class="description" >Lorem ipsum dolor sit amet ...</span>  <span class="message_date">le 23/11/19 à 18h00</span></li>
+        <li>Message de <span class="name_sender">Louis Cendrier</span> : <span class="description" >Lorem ipsum dolor sit amet...</span>  <span class="message_date"> le 06/03/19 à 10h00</span>.</li>
+    </ul>
+</div>
+
+
+<h3 class="red_title">Modifier votre profil</h3>
+<div class="profile">
+<form>
+   
+    <mat-form-field color="warn">
+        <input   type="number" matInput placeholder="Numero de téléphone" />
+      
+    </mat-form-field>
+   
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Adresse" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Changer d'adresse e-mail" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Changer de mot de passe" />
+      
+    </mat-form-field>
+    <mat-form-field color="warn">
+        <input   type="text" matInput placeholder="Confirmer votre mot de passe" />
+      
+    </mat-form-field>
+   
+    <button mat-fab color="warn" class="add_photo"><mat-icon >add_photo_alternate</mat-icon></button>
+
+    <button mat-raised-button color="warn">Envoyer</button>
+</form>
+</div>
